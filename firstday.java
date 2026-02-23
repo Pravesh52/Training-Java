@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class firstday {
     public static void main(String[] args) {
         //Print the range
@@ -115,6 +117,33 @@ public class firstday {
         int result=sumofarray-actualsum;
 
         System.out.println(result+" ");
+
+        //find duplicates
+       System.out.println("Print Duplicate: ");
+        int arr5[]={1,2,3,5,6,3};
+        Arrays.sort(arr5);
+        for(int i=0;i<arr5.length-1;i++){
+            if(arr5[i]==arr5[i+1]){
+                System.out.println("Duplicate: "+arr5[i]);
+                return;
+            }
+        }
+        System.out.println("Not Duplicate number");
+
+//reverse the string
+System.out.println("reverse");
+
+        String str="Pravesh";
+
+       String rev=" ";
+
+
+        for(int i=str.length()-1;i>=0;i--){
+            rev=rev+str.charAt(i);
+        }
+        System.out.println(str);
+        System.out.println(rev);   
+
 
     }
 }
