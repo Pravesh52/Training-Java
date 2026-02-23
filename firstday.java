@@ -47,5 +47,28 @@ public class firstday {
         System.out.println((a>b) && b1 <10);
         System.out.println((a>b) || b1 >10);
 
+        //Arrays
+
+        //Sum of arrays and found
+        //  number present or not present
+
+        int arr[]={1,2,3,4,5,6};
+        int sum=0;
+        int n=5;
+        boolean found=false;
+        for(int i=0;i<arr.length;i++){
+            sum+=arr[i];
+            if(arr[i]==n){
+                found=true;
+            }
+        }
+        System.out.println("sum of array: "+sum);
+        if(!found){
+            System.out.println("false");
+        }else{
+            System.out.println("true");
+        }
+
+
     }
 }
