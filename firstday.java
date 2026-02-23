@@ -69,6 +69,52 @@ public class firstday {
             System.out.println("true");
         }
 
+//Array sorted or not sorted
+        int arr2[]={1,5,7,6,2,3};
+        boolean found1=false;
+        for(int i=0;i<arr2.length-1;i++){
+            if(arr2[i]>arr2[i+1]){
+                found1=true;
+            }
+        }
+        if(!found1){
+            System.out.println("sorted");
+        }else{
+            System.out.println("not sorted");
+        }
+
+//negative and positive found number
+
+        int arr3[]={1,-5,-7,6,-2,3};
+
+        int neg=0;
+        int pos=0;
+
+        for(int i=0;i<arr3.length;i++){
+            if(arr3[i]>0){
+                pos++;
+            }else if(arr3[i]<0){
+                neg++;
+            }
+        }
+
+        System.out.println(pos);
+        System.out.println(neg);
+
+//find missing number 
+
+        int arr4[]={1,2,3,5,6};
+        int length=arr4.length;
+        int sumofarray=(length+1)*(length+2)/2;
+
+        int actualsum=0;
+
+        for(int i=0;i<length;i++){
+            actualsum+=arr4[i];
+        }
+        int result=sumofarray-actualsum;
+
+        System.out.println(result+" ");
 
     }
 }
